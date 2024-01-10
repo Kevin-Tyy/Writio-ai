@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 16, 16, 16;
+    --background-end-rgb: 16 16 16;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.font-syne{
+  font-family: 'Syne', sans-serif !important;
+}
+.font-hanken{
+  font-family: 'Hanken Grotesk', sans-serif !important;
+}
+.form-border-gradient {
+	position: relative;
+}
+.form-border-gradient::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+  z-index: -1;
+	border-radius: 40px;
+	padding: 4px;
+	background: linear-gradient(-45deg, #ffffff1e, #ffffff5e);
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+}
