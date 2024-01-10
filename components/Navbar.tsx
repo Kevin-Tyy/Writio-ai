@@ -26,14 +26,14 @@ export default function Navbar() {
                   </li>
                 </ul>
               </div>
-              <div className="flex gap-x-8">
+              <div className="flex gap-x-5">
                 <Link href="/login">
-                  <button className="px-8 py-4 ring-1 ring-[#FFF] ring-inset rounded-lg font-semibold uppercase text-sm hover:bg-[#C9FA49] hover:ring-0 hover:text-[#101010] transition duration-100 text-white ">
+                  <button className="px-8 py-3 ring-1 ring-[#FFF] ring-inset rounded-lg font-semibold uppercase text-sm hover:bg-[#C9FA49] hover:ring-0 hover:text-[#101010] transition duration-100 text-white ">
                     Login
                   </button>
                 </Link>
                 <Link href="/register">
-                  <button className="px-8 py-4 rounded-lg font-semibold uppercase text-sm bg-[#C9FA49] text-[#101010]">Sign up</button>
+                  <button className="px-8 py-3 rounded-lg font-semibold uppercase text-sm bg-[#C9FA49] text-[#101010]">Sign up</button>
                 </Link>
               </div>
             </div>
