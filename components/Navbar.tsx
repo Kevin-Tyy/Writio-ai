@@ -28,7 +28,7 @@ export default function Navbar() {
               </div>
               <div className="flex gap-x-5">
                 <Link href="/login">
-                  <button className="px-8 py-3 ring-1 ring-[#FFF] ring-inset rounded-lg font-semibold uppercase text-sm hover:bg-[#C9FA49] hover:ring-0 hover:text-[#101010] transition duration-100 text-white ">
+                  <button className="px-8 py-3 ring-1 ring-[#ffffffcc] ring-inset rounded-lg font-semibold uppercase text-sm hover:bg-white/10 transition duration-100 text-white ">
                     Login
                   </button>
                 </Link>

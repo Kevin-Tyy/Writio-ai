@@ -20,24 +20,36 @@ export default function Footer() {
             <div className="flex gap-x-14">
               <ul className="space-y-4">
                 <li>
-                  <Link href="/">Product</Link>
+                  <Link className="text-lg" href="/">
+                    Product
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/">Pricing</Link>
+                  <Link className="text-lg" href="/">
+                    Pricing
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/">FAQ</Link>
+                  <Link className="text-lg" href="/">
+                    FAQ
+                  </Link>
                 </li>
               </ul>
               <ul className="space-y-4">
                 <li>
-                  <Link href="/policies/terms-of-service">Terms of Services</Link>
+                  <Link className="text-lg" href="/policies/terms-of-service">
+                    Terms of Services
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/policies/privacy">Privacy Policy</Link>
+                  <Link className="text-lg" href="/policies/privacy">
+                    Privacy Policy
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/policies/refund">Refund Policy</Link>
+                  <Link className="text-lg" href="/policies/refund">
+                    Refund Policy
+                  </Link>
                 </li>
               </ul>
             </div>

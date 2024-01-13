@@ -60,3 +60,47 @@ export const features = [
     description: "Our support team is available 24/7 to help you on any questions.",
   },
 ];
+
+export const services = [
+  {
+    question: "Lorem ipsum dolor sit amet consectetur. Tincidunt ornare arcu ?",
+    answer: "Our software already integrated with more than 100 software and you can export it from the latest software, then import it in the Decko software.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet consectetur?",
+    answer: "Our software already integrated with more than 100 software and you can export it from the latest software, then import it in the Decko software.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet consectetur. Scelerisque sit?",
+    answer: "Our software already integrated with more than 100 software and you can export it from the latest software, then import it in the Decko software.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet consectetur. Non ut vulputate risus?",
+    answer: "Our software already integrated with more than 100 software and you can export it from the latest software, then import it in the Decko software.",
+  },
+];
+
+export const packageData = [
+  {
+    name: "Classic",
+    description: "Lorem ipsum dolor sit amet consectetur. Faucibus ut elementum integer.",
+    price: "$15",
+    features: ["Access to all templates", "3K tokens", "500 images", "3K audio seconds", "Basic support"],
+    link: "#",
+  },
+  {
+    name: "Premium",
+    description: "Lorem ipsum dolor sit amet consectetur. Faucibus ut elementum integer.",
+    price: "$25",
+    features: ["Access to all templates", "100 tokens", "5 images", "60 audio seconds", "Priority support"],
+    link: "#",
+    isPopular: true,
+  },
+  {
+    name: "Classic",
+    description: "Lorem ipsum dolor sit amet consectetur. Faucibus ut elementum integer.",
+    price: "$15",
+    features: ["Access to all templates", "5K tokens", "50 images", "900 audio seconds", "Priority support"],
+    link: "#",
+  },
+];
