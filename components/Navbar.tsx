@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="max-w-[1720px] mx-auto">
         <nav className="w-full flex items-center justify-between">
           <Logo />
-          {pathname !== ("/login" || "/register") && (
+          {pathname !== "/register" && pathname !== "/login"  && (
             <div className="flex items-center gap-x-12">
               <div className="">
                 <ul className="text-white flex gap-x-10">

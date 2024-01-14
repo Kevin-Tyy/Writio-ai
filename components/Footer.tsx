@@ -20,34 +20,34 @@ export default function Footer() {
             <div className="flex gap-x-14">
               <ul className="space-y-4">
                 <li>
-                  <Link className="text-lg" href="/">
+                  <Link className="text-lg font-syne" href="/">
                     Product
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-lg" href="/">
+                  <Link className="text-lg font-syne" href="/">
                     Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-lg" href="/">
+                  <Link className="text-lg font-syne" href="/">
                     FAQ
                   </Link>
                 </li>
               </ul>
               <ul className="space-y-4">
                 <li>
-                  <Link className="text-lg" href="/policies/terms-of-service">
+                  <Link className="text-lg font-syne" href="/policies/terms-of-service">
                     Terms of Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-lg" href="/policies/privacy">
+                  <Link className="text-lg font-syne" href="/policies/privacy">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link className="text-lg" href="/policies/refund">
+                  <Link className="text-lg font-syne" href="/policies/refund">
                     Refund Policy
                   </Link>
                 </li>
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="border-t border-[#EDEDED] pt-8">
-            <p className="text-center">© 2024 Company Name.</p>
+            <p className="text-center font-syne text-xl font-light">© 2024 Company Name.</p>
           </div>
         </div>
       </div>

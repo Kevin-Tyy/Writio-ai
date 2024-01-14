@@ -97,9 +97,9 @@ export const packageData = [
     isPopular: true,
   },
   {
-    name: "Classic",
+    name: "Priority",
     description: "Lorem ipsum dolor sit amet consectetur. Faucibus ut elementum integer.",
-    price: "$15",
+    price: "$50",
     features: ["Access to all templates", "5K tokens", "50 images", "900 audio seconds", "Priority support"],
     link: "#",
   },

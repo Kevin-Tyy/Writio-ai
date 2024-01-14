@@ -14,7 +14,7 @@ export default function Faq() {
         <div className="space-y-4 border border-white/60 rounded-[56px] py-8 px-12">
           <div className={`flex justify-between items-center `}>
             <h1
-              className="text-[27px] font-semibold cursor-pointer"
+              className="text-[27px] font-semibold cursor-pointer font-syne"
               onClick={() => {
                 if (currentItem === index) {
                   return setIsOpen((prev) => !prev);
@@ -31,9 +31,9 @@ export default function Faq() {
                 }
                 setIsOpen(true);
                 setCurrentItem(index);
-                
-              }} className="cursor-pointer">
-              {isOpen && currentItem === index ? <Minus size={40}/> : <Plus size={40}/>}
+              }}
+              className="cursor-pointer">
+              {isOpen && currentItem === index ? <Minus size={40} /> : <Plus size={40} />}
             </div>
           </div>
           <Collapse isOpened={isOpen && currentItem === index}>

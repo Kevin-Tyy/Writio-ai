@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -26,7 +27,7 @@ body {
 .font-syne {
   font-family: "Syne", sans-serif !important;
 }
-.font-hanken {
+* {
   font-family: "Hanken Grotesk", sans-serif !important;
 }
 .form-border-gradient {
@@ -78,14 +79,13 @@ body {
   width: 40px;
 }
 .outline-octagon-clip-path {
-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  height: 40px;
-  width: 40px;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  height: 32px;
+  width: 32px;
 }
-.outline-shadow{
+.outline-shadow {
   box-shadow: 0px 5px 0px #00d435;
 }
-.outline-shadow-pink{
+.outline-shadow-pink {
   box-shadow: 0px 5px 0px #d43a8760;
-
 }

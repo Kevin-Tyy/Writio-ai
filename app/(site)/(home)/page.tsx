@@ -14,17 +14,17 @@ export default function page() {
           <div className="max-w-[1720px] mx-auto w-full">
             <div className="flex items-center ">
               <div className="w-full space-y-10">
-                <h1 className="text-5xl leading-[1.3] max-w-[555px] font-syne">Turning concepts into AI-generated masterpieces.</h1>
+                <h1 className="text-[55px] leading-[1.3] max-w-[555px] font-syne font-bold">Turning concepts into AI-generated masterpieces.</h1>
                 <p className="max-w-[555px] text-[#DDDDDD] text-lg leading-loose">
                   Effortlessly generate high-quality AI-driven content tailored to your needs. Unlock limitless possibilities, save your time and start making
                   money today!
                 </p>
-                <div className="flex items-center gap-x-5">
+                <div className="flex items-center gap-x-5 !-mt-6">
                   <Link href="/">
-                    <button className="px-8 py-3 rounded-lg  font-semibold text-sm bg-[#C9FA49] text-[#101010]"> Get Started</button>
+                    <button className="px-8 py-3 rounded-lg  font-semibold bg-[#C9FA49] text-[#101010]"> Get Started</button>
                   </Link>
                   <Link href="/">
-                    <button className="px-8 py-3 rounded-lg font-semibold text-sm bg-transparent border border-[#FFF]/60"> Learn More</button>
+                    <button className="px-8 py-3 rounded-lg font-semibold bg-transparent border border-[#FFF]/60"> Learn More</button>
                   </Link>
                   <Image src="/svgs/arrow.svg" alt="arrow" width={300} height={300} className="translate-x-10 translate-y-10" />
                 </div>
@@ -32,31 +32,31 @@ export default function page() {
               <div className="w-full relative h-[40vh] max-h-[500px]">
                 <div className="absolute right-0 -translate-x-1/2 bg-[#C9FA49] w-[350px] h-[350px] rounded-full blur-[300px]" />
                 <div className="w-full h-full grid place-content-center">
-                  <div className="absolute top-0 left-10 translate-y-14">
+                  <div className="absolute top-0 left-10 translate-y-16">
                     <div className="relative opacity-40">
-                      <div className="bg-[#3cf765] rounded-xl w-24 h-[50px] outline-shadow" />
+                      <div className="bg-[#3cf765] rounded-xl w-20 h-[42px] outline-shadow" />
                       <div className="outline-clip-path bg-[#3cf765] absolute -right-10 -top-10 -rotate-45" />
                     </div>
                   </div>
                   <div className="absolute top-0 right-0">
                     <div className="relative opacity-40">
-                      <div className="bg-[#d43a87] rounded-xl w-24 h-[50px] outline-shadow-pink" />
+                      <div className="bg-[#d43a87] rounded-xl w-24 h-[42px] outline-shadow-pink" />
                       <div className="outline-clip-path bg-[#d43a87] absolute -bottom-10 -left-10 rotate-[135deg]" />
                     </div>
                   </div>
                   <div className="border-4 border-[#7aff3c] rounded-3xl py-5 px-10">
-                    <span className="uppercase text-4xl font-semibold tracking-[27px] text-[#C9FA49]">Writio</span>
+                    <span className="uppercase text-4xl font-semibold tracking-[27px] text-[#C9FA49] font-syne text-center">Writio</span>
                   </div>
                   <div className="absolute bottom-0 left-1/4">
-                    <div className="relative opacity-50 -translate-y-10">
-                      <div className="bg-[#15ff00] rounded-xl w-24 h-[50px] outline-shadow" />
-                      <div className="outline-octagon-clip-path bg-[#15ff00] absolute -left-10 -bottom-10 -rotate-[45deg]" />
+                    <div className="relative opacity-50 -translate-y-14">
+                      <div className="bg-[#15ff00] rounded-xl w-24 h-[42px] outline-shadow" />
+                      <div className="outline-octagon-clip-path bg-[#15ff00] absolute -left-8 -bottom-8 -rotate-[20deg]" />
                     </div>
                   </div>
                   <div className="absolute bottom-0 right-0">
                     <div className="relative opacity-40">
-                      <div className="bg-[#3cf765] rounded-xl w-24 h-[50px] outline-shadow" />
-                      <div className="outline-clip-path bg-[#3cf765] absolute -left-10 -top-10 -rotate-[135deg]" />
+                      <div className="bg-[#45f795] rounded-xl w-28 h-[42px] outline-shadow" />
+                      <div className="outline-clip-path bg-[#45f795] absolute -left-10 -top-10 -rotate-[135deg]" />
                     </div>
                   </div>
                 </div>
@@ -73,10 +73,10 @@ export default function page() {
           <div className="max-w-[1720px] mx-auto w-full !mt-28">
             <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff50] via-[#ffffff20] to-transparent p-20 backdrop-blur-lg w-full space-y-10">
               <div className="bg-[#FFFFFF18] py-2 px-4 rounded-full flex justify-center items-center w-fit">
-                <span className="text-sm text-[#FFF] uppercase">core features</span>
+                <span className="text-sm text-[#FFF] uppercase font-syne">core features</span>
               </div>
               <div className="flex justify-between items-center">
-                <h1 className="w-full text-5xl font-semibold max-w-2xl leading-[1.3]">Meet your ultimate AI-Powered Content Platform</h1>
+                <h1 className="w-full text-5xl font-semibold max-w-2xl leading-[1.3] font-syne">Meet your ultimate AI-Powered Content Platform</h1>
                 <p className="w-full max-w-2xl leading-loose text-lg">
                   Lorem ipsum dolor sit amet consectetur. Massa viverra netus sed auctor nunc sodales eleifend. Libero nisi at id malesuada.
                 </p>
@@ -85,7 +85,7 @@ export default function page() {
                 <div className="w-full flex flex-col gap-5">
                   <div className="bg-[#101010] px-12 pt-16 rounded-[40px] space-y-6 flex flex-col items-center">
                     <div className="bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">AI WRITER</div>
-                    <h1 className="text-3xl text-center font-semibold">Generate SEO-optimized blogs, sales emails...</h1>
+                    <h1 className="text-3xl text-center font-semibold font-syne leading-relaxed">Generate SEO-optimized blogs, sales emails...</h1>
                     <p className="text-white/80 text-center text-lg leading-loose">
                       Craft SEO-optimized blog posts, sales emails, and other content for maximum online visibility and engagement.
                     </p>
@@ -96,7 +96,7 @@ export default function page() {
                   </div>
                   <div className="bg-[#101010] px-12 pt-16 rounded-[40px] space-y-6 flex flex-col items-center">
                     <div className="bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">AI Code</div>
-                    <h1 className="text-3xl text-center font-semibold">Ready to write code at the speed of light?</h1>
+                    <h1 className="text-3xl text-center font-semibold font-syne leading-relaxed max-w-lg">Ready to write code at the speed of light?</h1>
                     <p className="text-white/80 text-center text-lg leading-loose">
                       Effortless coding with AI Code Generator: Instant solutions for
                       <br /> your programming needs.{" "}
@@ -104,10 +104,10 @@ export default function page() {
                     <Image src="/features2.png" alt="image" width={442} height={328} />
                   </div>
                 </div>
-                <div className="bg-[#101010] px-16 pt-10 rounded-[40px] h-full w-full flex flex-col">
+                <div className="bg-[#101010] px-16 pt-16 rounded-[40px] h-full w-full flex flex-col">
                   <div className="h-full space-y-6 flex flex-col items-start">
                     <div className="bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">100+ AI WRITER Templates</div>
-                    <h1 className="text-3xl font-semibold leading-relaxed">What can (Company Name) write for you?.</h1>
+                    <h1 className="text-3xl font-semibold font-syne leading-relaxed">What can (Company Name) write for you?.</h1>
                     <p className="text-white/80 text-lg leading-loose">
                       Lorem ipsum dolor sit amet consectetur. Convallis lacus gravida dignissim montes a. In faucibus interdum facilisis interdum nec. Mi
                       viverra tristique nunc tortor consequat orci nunc. Etiam faucibus sociis integer gravida tortor amet vitae. Venenatis tristique morbi nibh
@@ -153,7 +153,7 @@ export default function page() {
                 <span className="text-sm text-[#FFF] uppercase">core features</span>
               </div>
               <div className="flex justify-between items-center">
-                <h1 className="w-full text-5xl font-semibold max-w-2xl leading-[1.3]">Meet your ultimate AI-Powered Content Platform</h1>
+                <h1 className="w-full text-5xl font-semibold max-w-2xl leading-[1.3] font-syne">Meet your ultimate AI-Powered Content Platform</h1>
                 <p className="w-full max-w-2xl leading-loose text-lg">
                   Lorem ipsum dolor sit amet consectetur. Massa viverra netus sed auctor nunc sodales eleifend. Libero nisi at id malesuada.
                 </p>
@@ -162,7 +162,7 @@ export default function page() {
                 <div className="w-full bg-[#101010] px-12 pt-16 rounded-[40px] space-y-6 flex flex-col justify-between">
                   <div className="space-y-6">
                     <div className="w-fit bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">AI CODE</div>
-                    <h1 className="text-3xl font-semibold leading-relaxed">That's remarkably human-like and engaging...</h1>
+                    <h1 className="text-3xl font-semibold font-syne leading-relaxed">That's remarkably human-like and engaging...</h1>
                     <p className="text-white/80 text-lg leading-loose">
                       Simply choose your assistant and engage with a friendly chatbot to generate ideas, enhance your content, or even bring a smile to your
                       face.
@@ -175,7 +175,7 @@ export default function page() {
                 </div>
                 <div className="w-full bg-[#101010] px-12 pt-16 rounded-[40px] space-y-3 flex flex-col">
                   <div className="w-fit bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">AI IMAGE</div>
-                  <h1 className="text-3xl font-semibold leading-relaxed">Visualize what you dream of. Create images from text.</h1>
+                  <h1 className="text-3xl font-semibold font-syne leading-relaxed">Visualize what you dream of. Create images from text.</h1>
                   <p className="text-white/80 text-lg leading-loose">
                     Instantly create stunning images using AI Image Generator – your tool for artistic innovation.{" "}
                   </p>
@@ -187,7 +187,7 @@ export default function page() {
               </div>
               <div className="flex gap-5 !mt-5">
                 <div className="w-full bg-[#101010] p-12 rounded-[40px] space-y-6 flex flex-col items-center">
-                  <h1 className="text-3xl font-semibold text-center leading-relaxed">Transforming SpokenWords into Text.</h1>
+                  <h1 className="text-3xl font-semibold text-center font-syne leading-relaxed">Transforming SpokenWords into Text.</h1>
                   <p className="text-white/80 text-lg text-center leading-loose max-w-xl">
                     Effortless coding with AI Code Generator: Instant solutions for your programming needs.{" "}
                   </p>
@@ -197,7 +197,7 @@ export default function page() {
                   <Image src="/features4.png" alt="image" width={538} height={538} className="mx-auto" />
                 </div>
                 <div className="w-full max-w-lg bg-[#101010] px-12 pt-16 rounded-[40px] space-y-3 flex flex-col">
-                  <h1 className="text-3xl font-semibold leading-relaxed">Convert your texts into Lifelike Speech</h1>
+                  <h1 className="text-3xl font-semibold font-syne leading-relaxed">Convert your texts into Lifelike Speech</h1>
                   <p className="text-white/80 text-lg leading-loose">Elevate Your Content with Expressive Narration: Discover Text-to-Voice Excellence. </p>
                   <Link href="">
                     <button className="text-[#101010] bg-white px-6 py-3.5 rounded-xl font-semibold mt-3">Convert Now</button>
@@ -212,10 +212,12 @@ export default function page() {
           <div className="max-w-[1520px] mx-auto w-full">
             <div className="flex flex-col items-center gap-4">
               <div className="bg-[#c9fa4914] py-2 px-4 rounded-full flex justify-center items-center">
-                <span className="text-sm text-[#C9FA49] uppercase">Coolest Features</span>
+                <span className="text-sm text-[#C9FA49] uppercase font-syne">Coolest Features</span>
               </div>
-              <h1 className="text-5xl leading-[1.3] max-w-2xl text-center font-syne">Another features only for your business</h1>
-              <p className="max-w-xl text-center">Here are several features we provide to you to make the greatest CRM system for your business.</p>
+              <h1 className="text-5xl leading-[1.3] max-w-2xl text-center font-syne font-bold">Another features only for your business</h1>
+              <p className="max-w-xl text-center leading-relaxed text-lg text-white/70">
+                Here are several features we provide to you to make the greatest CRM system for your business.
+              </p>
             </div>
             <div className="grid grid-cols-4 gap-4 mt-10">
               {features.map((feature, index) => (
@@ -225,7 +227,7 @@ export default function page() {
                   <div className="ring-1 ring-[#FFFFFF24] bg-[#FFFFFF10] w-fit p-4 rounded-full group-hover:bg-[#c9fa4914] group-hover:ring-[#c9fa4952] transition duration-200">
                     <Image src={feature.image} alt="writio-features" width={30} height={30} />
                   </div>
-                  <h1 className="text-2xl font-syne">{feature.title}</h1>
+                  <h1 className="text-2xl font-syne font-semibold">{feature.title}</h1>
                   <p className="text-white/80 font-light text-lg leading-relaxed">{feature.description}</p>
                 </div>
               ))}
@@ -241,10 +243,10 @@ export default function page() {
           <div className="max-w-[1720px] mx-auto w-full">
             <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff50] via-[#ffffff20] to-transparent p-12 backdrop-blur-lg w-full space-y-10">
               <div className="bg-[#FFFFFF18] py-2 px-4 rounded-full flex justify-center items-center w-fit">
-                <span className="text-sm text-[#FFF] uppercase">questions & answers</span>
+                <span className="text-sm text-[#FFF] uppercase font-syne">questions & answers</span>
               </div>
               <div className="flex justify-between items-center">
-                <h1 className="w-full text-5xl font-semibold max-w-2xl leading-[1.3]">Common questions to know before use our software.</h1>
+                <h1 className="w-full text-5xl font-semibold max-w-3xl leading-[1.3] font-syne">Common questions to know before use our software.</h1>
                 <p className="w-full max-w-2xl leading-loose text-lg">
                   Here are several common question and answer that could help you understand our software before you use it.
                 </p>
