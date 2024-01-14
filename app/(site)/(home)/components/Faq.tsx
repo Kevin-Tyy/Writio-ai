@@ -11,10 +11,10 @@ export default function Faq() {
   return (
     <div className="space-y-4">
       {services.map((item, index) => (
-        <div className="space-y-4 border border-white/60 rounded-[56px] py-8 px-12">
-          <div className={`flex justify-between items-center `}>
+        <div className="border border-white/60 rounded-3xl min-[400px]:rounded-[56px] py-8 px-6 md:px-12">
+          <div className={`flex justify-between items-center`}>
             <h1
-              className="text-[27px] font-semibold cursor-pointer font-syne"
+              className="text-xl md:text-[27px] font-semibold cursor-pointer font-syne leading-relaxed"
               onClick={() => {
                 if (currentItem === index) {
                   return setIsOpen((prev) => !prev);
@@ -32,12 +32,23 @@ export default function Faq() {
                 setIsOpen(true);
                 setCurrentItem(index);
               }}
-              className="cursor-pointer">
+              className="cursor-pointer hidden lg:block">
               {isOpen && currentItem === index ? <Minus size={40} /> : <Plus size={40} />}
+            </div>
+            <div
+              onClick={() => {
+                if (currentItem === index) {
+                  return setIsOpen((prev) => !prev);
+                }
+                setIsOpen(true);
+                setCurrentItem(index);
+              }}
+              className="cursor-pointer block lg:hidden">
+              {isOpen && currentItem === index ? <Minus size={28} /> : <Plus size={28} />}
             </div>
           </div>
           <Collapse isOpened={isOpen && currentItem === index}>
-            <p className="max-w-[1320px] text-lg pb-4">{item.answer}</p>
+            <p className="max-w-[1320px] text-lg py-4 text-white/80">{item.answer}</p>
           </Collapse>
         </div>
       ))}

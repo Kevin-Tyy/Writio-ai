@@ -6,12 +6,12 @@ import React from "react";
 export default function page() {
   return (
     <section>
-      <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff50] via-[#ffffff20] to-transparent p-20 backdrop-blur-lg max-w-[620px]">
+      <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff50] via-[#ffffff20] to-transparent px-6 py-10 min-[480px]:p-20 backdrop-blur-lg max-w-[620px]">
         <div className="space-y-4">
-          <h1 className="text-4xl font-bold font-hanken">Welcome Back 👋</h1>
+          <h1 className="text-4xl font-bold">Welcome Back 👋</h1>
           <p className="leading-relaxed text-lg">
             Today is a new day. It's your day. You shape it.
-            <br /> Sign in to start managing your projects.
+            <br className="hidden sm:block"/> Sign in to start managing your projects.
           </p>
         </div>
         <form className="space-y-8 mt-12">
@@ -27,7 +27,7 @@ export default function page() {
             id="email"
             placeholder="Password *"
           />
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between flex-wrap gap-y-2">
             <button className="px-8 py-3.5 rounded-lg font-bold bg-[#C9FA49] text-[#101010]"> Login</button>
             <Link href="/forgot-password" className="text-[#FFFFFFDE]">
               Forgot your password?

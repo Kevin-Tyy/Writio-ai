@@ -8,7 +8,7 @@ interface Props {
 }
 export default function LMarquee({ angle }: Props) {
   return (
-    <div className="marquee z-[-1] opacity-30 ">
+    <div className="marquee z-[-1] opacity-30 hidden md:block">
       <div className={`bg-[#C9FA49] !rotate-[4deg] overflow-hidden marquee-l translate-y-6`}>
         <Marquee>
           <div className="w-full min-w-[320px] h-[90px] flex flex-col items-center justify-center py-5 px-6">

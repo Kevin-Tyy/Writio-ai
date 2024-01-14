@@ -9,7 +9,7 @@ interface Props {
 export default function RMarquee({ angle }: Props) {
   return (
     <div className="marquee">
-      <div className={`bg-[#C9FA49] !rotate-[-4deg] overflow-hidden marquee`}>
+      <div className={`bg-[#C9FA49] md:!rotate-[-4deg] overflow-hidden marquee`}>
         <Marquee speed={65}>
           <div className="w-full min-w-[320px] h-[100px] flex flex-col items-center justify-center py-5 px-6">
             <Image src="/marquee/ai-image.svg" alt="" width={200} height={200} className="min-w-[150px] select-none" draggable={false} />
