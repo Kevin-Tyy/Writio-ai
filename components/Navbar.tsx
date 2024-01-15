@@ -24,7 +24,7 @@ export default function Navbar() {
                     className={`w-5 relative h-[2px] bg-white block transition rounded-full duration-[.3s] ${
                       isExpanded && "rotate-[135deg] translate-y-[9px] w-5"
                     }`}></span>
-                  <span className={`w-4 relative h-[2px] bg-white transition  rounded-full duration-[.1s] opacity-100 ${isExpanded && "opacity-0"} `}></span>
+                  <span className={`w-4 relative h-[2px] bg-white transition  rounded-full duration-[.1s] opacity-100 ${isExpanded && "opacity-0 hidden"} `}></span>
                   <span
                     className={`w-5 relative h-[2px] bg-white rounded-full transition duration-[.3s] ${
                       isExpanded && "-rotate-[135deg] -translate-y-[9px] w-5"

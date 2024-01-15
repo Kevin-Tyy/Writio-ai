@@ -16,15 +16,15 @@ export default function page() {
         </div>
         <form className="space-y-8 mt-12">
           <input
-            className="bg-[#616161] rounded-lg w-full ring-1 ring-[#FFFFFF40] px-3 py-4 outline-none focus:ring-2 focus:ring-[#ffffff54] transition duration-200 placeholder:text-[#FFFFFF99]"
+            className="bg-[#E8E8E8] dark:bg-[#616161] rounded-lg w-full ring-1 ring-[#FFFFFF40] px-3 py-4 outline-none focus:ring-2 focus:ring-[#ffffff54] transition duration-200 placeholder:-[#E8E8E8] dark:placeholder:text-[#FFFFFF99]"
             type="text"
             id="email"
             placeholder="Email Address *"
           />
           <input
-            className="bg-[#616161] rounded-lg w-full ring-1 ring-[#FFFFFF40] px-3 py-4 outline-none focus:ring-2 focus:ring-[#ffffff54] transition duration-200 placeholder:text-[#FFFFFF99]"
+            className="bg-[#E8E8E8] dark:bg-[#616161] rounded-lg w-full ring-1 ring-[#FFFFFF40] px-3 py-4 outline-none focus:ring-2 focus:ring-[#ffffff54] transition duration-200 placeholder:-[#E8E8E8] dark:placeholder:text-[#FFFFFF99]"
             type="password"
-            id="email"
+            id="password"
             placeholder="Password *"
           />
           <div className="flex items-center justify-between flex-wrap gap-y-2">
@@ -36,7 +36,7 @@ export default function page() {
         </form>
         <div className="mt-10">
           <Link href="/register">
-            <button className="w-full bg-[#181913] py-4 px-4 uppercase text-sm rounded-lg">create new account</button>
+            <button className="text-white w-full bg-[#181913] py-4 px-4 uppercase text-sm rounded-lg">create new account</button>
           </Link>
         </div>
         <div className="mt-10 space-y-10">
@@ -46,11 +46,11 @@ export default function page() {
             <span className="w-full bg-[#cfdfe2d3] h-[2px]" />
           </div>
           <div className="space-y-4">
-            <button className="w-full flex gap-x-4 justify-center items-center bg-[#F3F9FA] py-3.5 rounded-lg">
+            <button className="w-full flex gap-x-4 justify-center items-center bg-[#E8E8E8] dark:bg-[#F3F9FA] py-3.5 rounded-lg">
               <Image src="/svgs/Google.svg" alt="Google" width={30} height={30} className="select-none" draggable={false} />
               <span className="text-[#313957] font-[600]">Sign in with Google</span>
             </button>
-            <button className="w-full flex gap-x-4 justify-center items-center bg-[#F3F9FA] py-3.5 rounded-lg">
+            <button className="w-full flex gap-x-4 justify-center items-center bg-[#E8E8E8] dark:bg-[#F3F9FA] py-3.5 rounded-lg">
               <Image src="/svgs/Facebook.svg" alt="Facebook" width={30} height={30} className="select-none" draggable={false} />
               <span className="text-[#313957] font-[600]">Sign in with Facebook</span>
             </button>

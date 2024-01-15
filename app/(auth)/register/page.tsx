@@ -38,7 +38,7 @@ export default function page() {
           <input
             className="bg-[#616161] rounded-lg w-full ring-1 ring-[#FFFFFF40] px-3 py-4 outline-none focus:ring-2 focus:ring-[#ffffff54] transition duration-200 placeholder:text-[#FFFFFF99]"
             type="password"
-            id="email"
+            id="password"
             placeholder="Password *"
           />
           <div className="flex items-center justify-between flex-wrap gap-y-2">
