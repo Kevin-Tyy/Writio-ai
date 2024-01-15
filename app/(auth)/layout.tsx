@@ -5,7 +5,7 @@ import React from "react";
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="relative">
-      <main className="w-full h-full min-h-screen absolute inset-0 bg-[#101010]/20 backdrop-blur-[100px] flex flex-col z-[1] ">
+      <main className="w-full h-full min-h-screen absolute inset-0 text-[#101010] dark:text-white bg-[#FFFFFF] dark:bg-[#101010]/20 backdrop-blur-[100px] flex flex-col z-[1] ">
         <Navbar />
         <div className="flex flex-col lg:flex-row flex-1 w-full h-full items-center max-w-[1520px] mx-auto gap-20 px-2 mt-20 lg:mt-0">
           <div className="w-full relative z-10 flex justify-center lg:justify-start">{children}</div>
@@ -20,7 +20,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
                   <Image src="/svgs/x-ico.svg" alt="arrow" width={15} height={15} className="absolute right-1/4 top-16" />
                   <Image src="/svgs/line-ico.svg" alt="arrow" width={35} height={35} className="absolute left-48 top-[108px]" />
                   <Image src="/svgs/square-ico.svg" alt="arrow" width={20} height={20} className="absolute left-60 top-[98px]" />
-                  <h1 className="text-4xl sm:text-5xl md:text-[60px] font-semibold !leading-[1.2] tracking-wider font-syne text-clip overflow-hidden">
+                  <h1 className="text-4xl sm:text-5xl text-[#9F9F9F] dark:text-white  md:text-[60px] font-semibold !leading-[1.2] tracking-wider font-syne text-clip overflow-hidden">
                     Concepts <br />
                     into AI <br />
                     -generated <br />
@@ -46,7 +46,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
                 </div>
                 <div className="flex gap-3  border-t-2 border-[#DDD] pt-2 px-4 cursor-pointer">
                   <span className="text-[22px] font-semibold whitespace-nowrap">Try now</span>
-                  <Image src="/svgs/arrow-left.svg" alt="arrow" width={12} height={12} />
+                  <Image src={"/svgs/arrow-left.svg"} alt="arrow" width={12} height={12} />
                 </div>
               </div>
             </div>
