@@ -12,7 +12,7 @@ export default function Pricing() {
       <section>
         <div className="flex flex-col items-center gap-4">
           <h1 className="text-4xl md:text-5xl !leading-[1.3] max-w-2xl text-center font-syne font-bold">Our Pricing Plan</h1>
-          <p className="max-w-xl text-center text-lg text-white/70">Rewards and benefits without the downsides of a credit card.</p>
+          <p className="max-w-xl text-center text-lg text-[#101010] dark:text-white/70">Rewards and benefits without the downsides of a credit card.</p>
           <div className="w-full sm:w-auto flex bg-gradient-to-r from-[#ffffff56] to-[#FFFFFF10] rounded-xl border border-white/10 mt-6">
             <div
               onClick={() => setSelectedPricing("Monthly")}
@@ -51,7 +51,7 @@ export default function Pricing() {
               )}
               <div className="space-y-5">
                 <h1 className={`${pack.isPopular && "text-[#101010]"} text-3xl font-syne font-semibold`}>{pack.name}</h1>
-                <p className={`${pack.isPopular && "!text-[#6f6f6fcc]"} text-xl leading-relaxed text-white/80`}>{pack.description}</p>
+                <p className={`${pack.isPopular && "!text-[#6f6f6fcc]"} text-xl leading-relaxed text-[#101010] dark:text-white/80`}>{pack.description}</p>
                 <h2 className="text-4xl font-bold">{pack.price}</h2>
                 <div className="border-t border-[#8B8B8B] space-y-3 pt-8">
                   {pack.features.map((feature, index) => (

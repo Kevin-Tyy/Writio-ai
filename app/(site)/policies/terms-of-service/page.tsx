@@ -4,7 +4,7 @@ export default function page() {
   return (
     <section className="w-full px-2 sm:px-4 md:px-16 py-6 my-10">
       <div className="w-full max-w-[1520px] mx-auto">
-        <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff40] via-[#ffffff25] to-transparent px-4 py-10 sm:px-10 lg:px-20 sm:py-16 backdrop-blur-lg">
+        <div className="w-full relative rounded-[40px] border-4 dark:border-none border-[!DADADA] form-border-gradient bg-gradient-to-br from-[#c0c0c015] via-[#c2c2c21c] dark:from-[#ffffff50] dark:via-[#ffffff20] to-transparent px-6 py-10 sm:px-10 lg:px-20 sm:py-16 backdrop-blur-lg  text-[#101010] dark:text-white">
           <h1 className="text-4xl font-semibold">Terms of Services</h1>
           <p className="mt-4 leading-loose opacity-80 font-light text-base sm:text-[18px]">
             Lorem ipsum dolor sit amet consectetur. Nibh accumsan vitae sit nisl adipiscing commodo commodo volutpat. Elit feugiat elit diam volutpat et duis

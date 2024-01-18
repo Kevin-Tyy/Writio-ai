@@ -18,8 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="relative">
           <ThemeProviders>
             <Toolbar />
+            {children}
           </ThemeProviders>
-          {children}
         </div>
       </body>
     </html>

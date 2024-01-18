@@ -3,14 +3,14 @@
 import React, { useState } from "react";
 import { Collapse } from "react-collapse";
 import { ChevronDown, Minus, Plus } from "lucide-react";
-import { services } from "./constants/data";
+import { faqs } from "./constants/data";
 
 export default function Faq() {
   const [isOpen, setIsOpen] = useState(true);
   const [currentItem, setCurrentItem] = useState(0);
   return (
     <div className="space-y-4">
-      {services.map((item, index) => (
+      {faqs.map((item, index) => (
         <div className="border border-white/60 rounded-3xl min-[400px]:rounded-[56px] py-8 px-6 md:px-12">
           <div className={`flex justify-between items-center`}>
             <h1
@@ -48,7 +48,7 @@ export default function Faq() {
             </div>
           </div>
           <Collapse isOpened={isOpen && currentItem === index}>
-            <p className="max-w-[1320px] text-lg py-4 text-white/80">{item.answer}</p>
+            <p className="max-w-[1320px] text-lg py-4 text-[#101010] dark:text-white/80">{item.answer}</p>
           </Collapse>
         </div>
       ))}

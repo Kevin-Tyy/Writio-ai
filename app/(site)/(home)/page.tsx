@@ -9,7 +9,7 @@ import Pricing from "./components/Pricing";
 export default function page() {
   return (
     <div className="relative">
-      <main className="w-full h-full min-h-screen bg-[#101010]">
+      <main className="w-full h-full min-h-screen text-[#101010] dark:text-white bg-white dark:bg-[#101010]">
         <section className="px-2 sm:px-4 md:px-16 py-6 my-10 sm:my-28">
           <div className="max-w-[1720px] mx-auto w-full">
             <div className="flex flex-col lg:flex-row justify-center items-center gap-y-10">
@@ -17,7 +17,7 @@ export default function page() {
                 <h1 className="text-[40px] sm:text-5xl md:text-[55px] !leading-[1.3] max-w-[555px] font-syne font-bold">
                   Turning concepts into AI-generated masterpieces.
                 </h1>
-                <p className="max-w-[555px] text-[#DDDDDD] text-lg leading-loose">
+                <p className="max-w-[555px] text-[#101010] dark:text-[#DDDDDD] text-lg leading-loose">
                   Effortlessly generate high-quality AI-driven content tailored to your needs. Unlock limitless possibilities, save your time and start making
                   money today!
                 </p>
@@ -26,14 +26,17 @@ export default function page() {
                     <button className="px-8 py-3 rounded-lg  font-semibold bg-[#C9FA49] text-[#101010] whitespace-nowrap"> Get Started</button>
                   </Link>
                   <Link href="/">
-                    <button className="px-8 py-3 rounded-lg font-semibold bg-transparent border border-[#FFF]/60 whitespace-nowrap"> Learn More</button>
+                    <button className="relative px-8 py-3 rounded-lg font-semibold bg-transparent border border-[#8B8B8B] dark:border-[#FFF]/60 whitespace-nowrap before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0 before:h-full before:bg-[#fff]/10 hover:before:w-full before:transition-all before:duration-200 before:rounded-md before:z-[-1]">
+                      {" "}
+                      Learn More
+                    </button>
                   </Link>
                 </div>
                 <Image src="/svgs/arrow.svg" alt="arrow" width={300} height={300} className="absolute right-40 translate-y-20 bottom-0 hidden lg:block" />
               </div>
               <div className="w-full relative h-[40vh] min-h-[360px] max-h-[500px]">
-                <div className="absolute right-0 -translate-x-1/2 bg-[#C9FA49] w-[350px] h-[350px] rounded-full blur-[300px]" />
-                <div className="w-full h-full grid place-content-center">
+                <div className="absolute right-0 -translate-x-1/2 bg-purple-700 dark:bg-[#C9FA49] w-[350px] h-[350px] rounded-full blur-[200px] dark:blur-[300px]" />
+                <div className="w-full h-full grid sm:place-content-center">
                   <div className="absolute top-0 sm:left-10 translate-y-16 scale-75 sm:scale-100">
                     <div className="relative opacity-40">
                       <div className="bg-[#3cf765] rounded-xl w-20 h-[42px] outline-shadow" />
@@ -46,8 +49,10 @@ export default function page() {
                       <div className="outline-clip-path bg-[#d43a87] absolute -bottom-10 -left-10 rotate-[135deg]" />
                     </div>
                   </div>
-                  <div className="border-4 border-[#7aff3c] rounded-3xl w-full py-5 px-2 sm:px-10 relative z-[1] grid place-content-center">
-                    <span className="uppercase text-3xl sm:text-4xl font-semibold tracking-[27px] text-[#C9FA49] font-syne text-center">Writio</span>
+                  <div className="place-self-center border-4 border-purple-700 dark:border-[#7aff3c] bg-white/50 dark:bg-transparent rounded-3xl w-full px-4 sm:pr-10 sm:pl-14 h-[100px] relative z-[1] grid place-content-center">
+                    <span className="uppercase text-3xl sm:text-4xl font-bold tracking-[27px] text-[#101010] dark:text-[#C9FA49] font-syne text-center">
+                      Writio
+                    </span>
                   </div>
                   <div className="absolute bottom-0 left-10 sm:left-1/4 scale-75 sm:scale-100">
                     <div className="relative opacity-50 -translate-y-14">
@@ -70,12 +75,12 @@ export default function page() {
           <LMarquee />
           <RMarquee />
         </div>
-        <section className="px-2 sm:px-4 md:px-16 py-6 relative">
+        <section id="products" className="px-2 sm:px-4 md:px-16 py-6 relative !mt-14 sm:!mt-28">
           <Image src="/planet-image.png" alt="" width={500} height={500} className="absolute right-0 top-0" />
-          <div className="max-w-[1720px] mx-auto w-full !mt-14 sm:!mt-28">
-            <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff50] via-[#ffffff20] to-transparent pt-10 pb-8 sm:py-12 md:py-16 px-3.5 min-[400px]:px-5 md:px-10 lg:p-20 backdrop-blur-lg w-full space-y-6 sm:space-y-10">
-              <div className="ring-1 ring-white py-2 px-4 rounded-full flex justify-center items-center w-fit">
-                <span className="text-sm text-[#FFF] uppercase font-syne">core features</span>
+          <div className="max-w-[1720px] mx-auto w-full">
+            <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff50] via-[#ffffff20] to-transparent pt-10 pb-8 sm:py-12 md:py-16 px-3.5 min-[400px]:px-5 md:px-10 lg:p-20 backdrop-blur-3xl w-full space-y-6 sm:space-y-10">
+              <div className="ring-1 ring-[#101010] dark:ring-white py-2 px-4 rounded-full flex justify-center items-center w-fit">
+                <span className="text-sm text-[#101010] dark:text-[#FFF] uppercase font-syne">core features</span>
               </div>
               <div className="flex flex-col xl:flex-row justify-between xl:items-center gap-6">
                 <h1 className="w-full text-4xl md:text-5xl font-bold max-w-3xl !leading-[1.3] font-syne">Meet your ultimate AI-Powered Content Platform</h1>
@@ -85,10 +90,10 @@ export default function page() {
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                 <div className="w-full flex flex-col gap-5">
-                  <div className="bg-[#101010] px-4 sm:px-12 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col items-center">
+                  <div className="bg-[#F2F2F2] dark:bg-[#101010] px-4 sm:px-12 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col items-center">
                     <div className="bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">AI WRITER</div>
                     <h1 className="text-3xl text-center font-semibold font-syne leading-relaxed">Generate SEO-optimized blogs, sales emails...</h1>
-                    <p className="text-white/80 text-center text-lg leading-loose">
+                    <p className="text-[#101010] dark:text-white/80 text-center text-lg leading-loose">
                       Craft SEO-optimized blog posts, sales emails, and other content for maximum online visibility and engagement.
                     </p>
                     <Link href="">
@@ -96,21 +101,21 @@ export default function page() {
                     </Link>
                     <Image src="/features1.png" alt="image" width={442} height={328} />
                   </div>
-                  <div className="bg-[#101010] px-4 sm:px-12 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col items-center">
+                  <div className="bg-[#F2F2F2] dark:bg-[#101010] px-4 sm:px-12 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col items-center">
                     <div className="bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">AI Code</div>
                     <h1 className="text-3xl text-center font-semibold font-syne leading-relaxed max-w-lg">Ready to write code at the speed of light?</h1>
-                    <p className="text-white/80 text-center text-lg leading-loose">
+                    <p className="text-[#101010] dark:text-white/80 text-center text-lg leading-loose">
                       Effortless coding with AI Code Generator: Instant solutions for
                       <br /> your programming needs.{" "}
                     </p>
                     <Image src="/features2.png" alt="image" width={442} height={328} />
                   </div>
                 </div>
-                <div className="bg-[#101010] px-4 sm:px-16 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] h-full w-full flex flex-col">
+                <div className="bg-[#F2F2F2] dark:bg-[#101010] px-4 sm:px-16 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] h-full w-full flex flex-col">
                   <div className="h-full space-y-6 flex flex-col items-start">
                     <div className="bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">100+ AI WRITER Templates</div>
                     <h1 className="text-3xl font-semibold font-syne leading-relaxed">What can (Company Name) write for you?.</h1>
-                    <p className="text-white/80 text-lg leading-loose">
+                    <p className="text-[#101010] dark:text-white/80 text-lg leading-loose">
                       Lorem ipsum dolor sit amet consectetur. Convallis lacus gravida dignissim montes a. In faucibus interdum facilisis interdum nec. Mi
                       viverra tristique nunc tortor consequat orci nunc. Etiam faucibus sociis integer gravida tortor amet vitae. Venenatis tristique morbi nibh
                       risus a rutrum quisque est vitae. Quisque morbi eu morbi eros ac quam volutpat leo. Enim fermentum duis sed scelerisque tristique habitant
@@ -123,22 +128,28 @@ export default function page() {
                   <div className="h-full 2xl:w-4/5 mx-auto flex items-start my-20">
                     <div className="h-full grid grid-cols-3 w-full">
                       <div className="flex items-center">
-                        <Image src="/gifs/facebook-ico.gif" alt="facebook-ico" width={140} height={140} className="mix-blend-exclusion" />
+                        <Image src="/gifs/facebook-ico.gif" alt="facebook-ico" width={140} height={140} className="dark:mix-blend-exclusion" />
                       </div>
                       <div className="flex flex-col justify-center items-center">
-                        <Image src="/gifs/instagram-ico.gif" alt="instagram-ico" width={140} height={140} className="-translate-y-20 mix-blend-color-dodge" />
+                        <Image
+                          src="/gifs/instagram-ico.gif"
+                          alt="instagram-ico"
+                          width={140}
+                          height={140}
+                          className="-translate-y-20 dark:mix-blend-color-dodge"
+                        />
                         <Image
                           src="/gifs/twitter-x-ico.gif"
                           alt="x-ico"
                           width={80}
                           height={80}
-                          className="-translate-x-10 translate-y-20 mix-blend-color-dodge"
+                          className="-translate-x-10 translate-y-20 dark:mix-blend-color-dodge"
                         />
                       </div>
                       <div className="flex flex-col justify-between items-end">
-                        <Image src="/gifs/linkedin-ico.gif" alt="linkedin-ico" width={140} height={140} className="mix-blend-color-dodge" />
-                        <Image src="/gifs/youtube-ico.gif" alt="linkedin-ico" width={140} height={140} className="-translate-x-16 mix-blend-luminosity" />
-                        <Image src="/gifs/behance-ico.gif" alt="behance-ico" width={140} height={140} className="mix-blend-difference" />
+                        <Image src="/gifs/linkedin-ico.gif" alt="linkedin-ico" width={140} height={140} className="dark:mix-blend-color-dodge" />
+                        <Image src="/gifs/youtube-ico.gif" alt="linkedin-ico" width={140} height={140} className="-translate-x-16 dark:mix-blend-luminosity" />
+                        <Image src="/gifs/behance-ico.gif" alt="behance-ico" width={140} height={140} className="dark:mix-blend-difference" />
                       </div>
                     </div>
                   </div>
@@ -150,9 +161,9 @@ export default function page() {
         <section className="px-2 sm:px-4 md:px-16 sm:py-6 relative md:mt-10">
           <Image src="/planet-image-2.png" alt="" width={750} height={750} className="absolute left-0 top-10 opacity-40" />
           <div className="max-w-[1720px] mx-auto w-full">
-            <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff50] via-[#ffffff20] to-transparent pt-10 pb-8 sm:py-12 md:py-16 px-3.5 min-[400px]:px-5 md:px-10 lg:p-20 backdrop-blur-lg w-full space-y-6 sm:space-y-10">
-              <div className="ring-1 ring-white py-2 px-4 rounded-full flex justify-center items-center w-fit">
-                <span className="text-sm text-[#FFF] uppercase">core features</span>
+            <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff50] via-[#ffffff20] to-transparent pt-10 pb-8 sm:py-12 md:py-16 px-3.5 min-[400px]:px-5 md:px-10 lg:p-20 backdrop-blur-3xl w-full space-y-6 sm:space-y-10">
+              <div className="ring-1 ring-[#101010] dark:ring-white py-2 px-4 rounded-full flex justify-center items-center w-fit">
+                <span className="text-sm text-[#101010] dark:text-[#FFF] uppercase">core features</span>
               </div>
               <div className="flex flex-col xl:flex-row justify-between xl:items-center gap-6">
                 <h1 className="w-full text-4xl md:text-5xl font-bold max-w-3xl !leading-[1.3] font-syne">Meet your ultimate AI-Powered Content Platform</h1>
@@ -161,11 +172,11 @@ export default function page() {
                 </p>
               </div>
               <div className="flex flex-col lg:flex-row gap-5">
-                <div className="w-full bg-[#101010] px-4 sm:px-12 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col justify-between">
+                <div className="w-full bg-[#F2F2F2] dark:bg-[#101010] px-4 sm:px-12 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col justify-between">
                   <div className="space-y-6">
                     <div className="w-fit bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">AI CODE</div>
                     <h1 className="text-3xl font-semibold font-syne leading-relaxed">That's remarkably human-like and engaging...</h1>
-                    <p className="text-white/80 text-lg leading-loose">
+                    <p className="text-[#101010] dark:text-white/80 text-lg leading-loose">
                       Simply choose your assistant and engage with a friendly chatbot to generate ideas, enhance your content, or even bring a smile to your
                       face.
                     </p>
@@ -175,10 +186,10 @@ export default function page() {
                   </div>
                   <Image src="/features3.png" alt="image" width={442} height={328} className="mx-auto" />
                 </div>
-                <div className="w-full bg-[#101010] px-4 sm:px-12 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col justify-between">
+                <div className="w-full bg-[#F2F2F2] dark:bg-[#101010] px-4 sm:px-12 pt-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col justify-between">
                   <div className="w-fit bg-[#C9FA49] text-[#101010] px-5 py-1.5 rounded-border text-sm font-semibold uppercase">AI IMAGE</div>
                   <h1 className="text-3xl font-semibold font-syne leading-relaxed">Visualize what you dream of. Create images from text.</h1>
-                  <p className="text-white/80 text-lg leading-loose">
+                  <p className="text-[#101010] dark:text-white/80 text-lg leading-loose">
                     Instantly create stunning images using AI Image Generator – your tool for artistic innovation.{" "}
                   </p>
                   <Link href="">
@@ -188,9 +199,9 @@ export default function page() {
                 </div>
               </div>
               <div className="flex flex-col lg:flex-row gap-5 !mt-5">
-                <div className="w-full bg-[#101010] px-4 sm:px-12 py-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col items-center">
+                <div className="w-full bg-[#F2F2F2] dark:bg-[#101010] px-4 sm:px-12 py-10 sm:pt-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col items-center">
                   <h1 className="text-3xl font-semibold text-center font-syne leading-relaxed">Transforming SpokenWords into Text.</h1>
-                  <p className="text-white/80 text-lg text-center leading-loose max-w-xl">
+                  <p className="text-[#101010] dark:text-white/80 text-lg text-center leading-loose max-w-xl">
                     Effortless coding with AI Code Generator: Instant solutions for your programming needs.{" "}
                   </p>
                   <Link href="">
@@ -198,9 +209,9 @@ export default function page() {
                   </Link>
                   <Image src="/features4.png" alt="image" width={538} height={538} className="mx-auto" />
                 </div>
-                <div className=" bg-[#101010] px-4 sm:px-12 py-10 sm:py-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col items-center lg:items-start">
+                <div className=" bg-[#F2F2F2] dark:bg-[#101010] px-4 sm:px-12 py-10 sm:py-16 rounded-3xl sm:rounded-[40px] space-y-6 flex flex-col items-center lg:items-start">
                   <h1 className="text-3xl font-semibold font-syne leading-relaxed text-center lg:text-left">Convert your texts into Lifelike Speech</h1>
-                  <p className="text-white/80 text-lg leading-loose text-center lg:text-left">
+                  <p className="text-[#101010] dark:text-white/80 text-lg leading-loose text-center lg:text-left">
                     Elevate Your Content with Expressive Narration: Discover Text-to-Voice Excellence.{" "}
                   </p>
                   <Link href="">
@@ -212,14 +223,14 @@ export default function page() {
             </div>
           </div>
         </section>
-        <section className="px-2 sm:px-4 md:px-16 sm:py-6 mt-10">
+        <section id="featured" className="px-2 sm:px-4 md:px-16 sm:py-6 mt-10">
           <div className="max-w-[1520px] mx-auto w-full">
             <div className="flex flex-col items-center gap-4">
-              <div className="bg-[#c9fa4914] py-2 px-4 rounded-full flex justify-center items-center">
+              <div className=" bg-[#101010] dark:bg-[#c9fa4914] py-2 px-4 rounded-full flex justify-center items-center">
                 <span className="text-sm text-[#C9FA49] uppercase font-syne">Coolest Features</span>
               </div>
               <h1 className="text-4xl md:text-5xl !leading-[1.3] max-w-2xl text-center font-syne font-bold">Another features only for your business</h1>
-              <p className="max-w-xl text-center leading-relaxed text-lg text-white/70">
+              <p className="max-w-xl text-center leading-relaxed text-lg text-[#101010] dark:text-white/70">
                 Here are several features we provide to you to make the greatest CRM system for your business.
               </p>
             </div>
@@ -227,27 +238,28 @@ export default function page() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-[#adceff14] ring-1 ring-[#ffffff16] p-10 rounded-[33px] space-y-4 group hover:bg-[#c9fa4914] hover:ring-[#c9fa4952] transition duration-200">
-                  <div className="ring-1 ring-[#FFFFFF24] bg-[#FFFFFF10] w-fit p-4 rounded-full group-hover:bg-[#c9fa4914] group-hover:ring-[#c9fa4952] transition duration-200">
-                    <Image src={feature.image} alt="writio-features" width={30} height={30} />
+                  className="bg-[#46464614] dark:bg-[#adceff14] ring-1 ring-[#a5a5a529] dark:ring-[#ffffff16] p-10 rounded-[33px] space-y-4 group hover:bg-gradient-to-b hover:from-[#c9fa49] hover:to-[#a1cb34] dark:bg-none dark:hover:bg-[#c9fa4914] hover:ring-[#c9fa4952] transition duration-200">
+                  <div className="ring-1 ring-[#101010] dark:ring-[#FFFFFF24] bg-[#FFFFFF10] w-fit p-4 rounded-full group-hover:bg-white dark:group-hover:bg-[#c9fa4914] group-hover:ring-[#c9fa4952] transition duration-200">
+                    <Image src={feature.image} alt="writio-features" width={30} height={30} className="hidden dark:block" />
+                    <Image src={feature.lightimage} alt="writio-features" width={30} height={30} className="block dark:hidden" />
                   </div>
                   <h1 className="text-2xl font-syne font-semibold leading-relaxed">{feature.title}</h1>
-                  <p className="text-white/80 font-light text-lg leading-relaxed">{feature.description}</p>
+                  <p className="text-[#101010] dark:text-white/80 font-light text-lg leading-relaxed">{feature.description}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
-        <section className="px-2 sm:px-4 md:px-16 sm:py-6 mt-10">
+        <section id="pricing" className="px-2 sm:px-4 md:px-16 sm:py-6 mt-10">
           <div className="max-w-[1520px] mx-auto w-full">
             <Pricing />
           </div>
         </section>
         <section className="px-2 sm:px-4 md:px-16 sm:py-6 mt-10">
           <div className="max-w-[1720px] mx-auto w-full">
-            <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#ffffff50] via-[#ffffff20] to-transparent pt-10 pb-8 sm:py-12 md:py-16 px-3.5 min-[400px]:px-5 md:px-10 lg:p-20 backdrop-blur-lg w-full space-y-6 sm:space-y-10">
-              <div className="bg-[#FFFFFF18] py-2 px-4 rounded-full flex justify-center items-center w-fit">
-                <span className="text-sm text-[#FFF] uppercase font-syne">questions & answers</span>
+            <div className="relative rounded-[40px] form-border-gradient bg-gradient-to-br from-[#c9fa49] via-[#c8fa495e] dark:from-[#ffffff50] dark:via-[#ffffff20] to-transparent pt-10 pb-8 sm:py-12 md:py-16 px-3.5 min-[400px]:px-5 md:px-10 lg:p-20 backdrop-blur-3xl w-full space-y-6 sm:space-y-10">
+              <div className="bg-[#Fring-[#101010] dark:FFFFF18] py-2 px-4 rounded-full flex justify-center items-center w-fit">
+                <span className="text-sm text-[#101010] dark:text-[#FFF] uppercase font-syne">questions & answers</span>
               </div>
               <div className="flex flex-col xl:flex-row justify-between xl:items-center gap-6">
                 <h1 className="w-full text-4xl md:text-5xl font-semibold max-w-3xl !leading-[1.3] font-syne">
